@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "chatbot:test": "node src/chatbot/test.js",
+    "chatbot:demo": "node src/chatbot/demo.js"
   },
   "dependencies": {
     "react": "^19.1.1",
