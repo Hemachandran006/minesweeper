@@ -1,0 +1,435 @@
+{
+  "specification_categories": {
+    "display": {
+      "category_name": "Display",
+      "icon": "📱",
+      "fields": {
+        "screen_size": {
+          "label": "Screen Size",
+          "unit": "inches",
+          "format": "decimal",
+          "example": "6.1"
+        },
+        "resolution": {
+          "label": "Resolution",
+          "unit": "pixels",
+          "format": "width x height",
+          "example": "1179 x 2556"
+        },
+        "pixel_density": {
+          "label": "Pixel Density",
+          "unit": "ppi",
+          "format": "integer",
+          "example": "460"
+        },
+        "display_type": {
+          "label": "Display Type",
+          "unit": null,
+          "format": "string",
+          "example": "Super Retina XDR OLED"
+        },
+        "refresh_rate": {
+          "label": "Refresh Rate",
+          "unit": "Hz",
+          "format": "integer",
+          "example": "120"
+        },
+        "brightness": {
+          "label": "Peak Brightness",
+          "unit": "nits",
+          "format": "integer",
+          "example": "2000"
+        },
+        "protection": {
+          "label": "Protection",
+          "unit": null,
+          "format": "string",
+          "example": "Ceramic Shield front, textured matte glass back"
+        }
+      }
+    },
+    "performance": {
+      "category_name": "Performance",
+      "icon": "⚡",
+      "fields": {
+        "chipset": {
+          "label": "Chipset",
+          "unit": null,
+          "format": "string",
+          "example": "Apple A17 Pro (3 nm)"
+        },
+        "cpu": {
+          "label": "CPU",
+          "unit": null,
+          "format": "string",
+          "example": "Hexa-core (2x3.78 GHz Everest + 4x2.11 GHz Sawtooth)"
+        },
+        "gpu": {
+          "label": "GPU",
+          "unit": null,
+          "format": "string",
+          "example": "Apple GPU (6-core graphics)"
+        },
+        "ram": {
+          "label": "RAM",
+          "unit": "GB",
+          "format": "integer",
+          "example": "8"
+        },
+        "storage_options": {
+          "label": "Storage Options",
+          "unit": "GB",
+          "format": "array",
+          "example": ["128", "256", "512", "1TB"]
+        },
+        "expandable_storage": {
+          "label": "Expandable Storage",
+          "unit": null,
+          "format": "boolean",
+          "example": false
+        },
+        "antutu_score": {
+          "label": "AnTuTu Score",
+          "unit": "points",
+          "format": "integer",
+          "example": "1500000"
+        }
+      }
+    },
+    "camera": {
+      "category_name": "Camera",
+      "icon": "📷",
+      "fields": {
+        "main_camera": {
+          "label": "Main Camera",
+          "unit": "MP",
+          "format": "detailed_object",
+          "example": {
+            "megapixels": "48",
+            "aperture": "f/1.78",
+            "sensor_size": "1/1.28\"",
+            "features": ["sensor-shift OIS", "PDAF"]
+          }
+        },
+        "ultra_wide": {
+          "label": "Ultra Wide",
+          "unit": "MP",
+          "format": "detailed_object",
+          "example": {
+            "megapixels": "12",
+            "aperture": "f/2.2",
+            "field_of_view": "120°"
+          }
+        },
+        "telephoto": {
+          "label": "Telephoto",
+          "unit": "MP",
+          "format": "detailed_object",
+          "example": {
+            "megapixels": "12",
+            "aperture": "f/2.8",
+            "zoom": "3x optical"
+          }
+        },
+        "front_camera": {
+          "label": "Front Camera",
+          "unit": "MP",
+          "format": "detailed_object",
+          "example": {
+            "megapixels": "12",
+            "aperture": "f/1.9",
+            "features": ["Face ID", "Portrait mode"]
+          }
+        },
+        "video_recording": {
+          "label": "Video Recording",
+          "unit": null,
+          "format": "array",
+          "example": ["4K@60fps", "1080p@240fps", "Cinematic mode"]
+        },
+        "camera_features": {
+          "label": "Camera Features",
+          "unit": null,
+          "format": "array",
+          "example": ["Night mode", "ProRAW", "Smart HDR 4", "Photographic Styles"]
+        }
+      }
+    },
+    "battery": {
+      "category_name": "Battery & Charging",
+      "icon": "🔋",
+      "fields": {
+        "battery_capacity": {
+          "label": "Battery Capacity",
+          "unit": "mAh",
+          "format": "integer",
+          "example": "3279"
+        },
+        "wired_charging": {
+          "label": "Wired Charging",
+          "unit": "W",
+          "format": "integer",
+          "example": "27"
+        },
+        "wireless_charging": {
+          "label": "Wireless Charging",
+          "unit": "W",
+          "format": "integer",
+          "example": "15"
+        },
+        "reverse_charging": {
+          "label": "Reverse Charging",
+          "unit": null,
+          "format": "boolean",
+          "example": true
+        },
+        "battery_life": {
+          "label": "Battery Life",
+          "unit": "hours",
+          "format": "string",
+          "example": "Up to 22 hours video playback"
+        },
+        "charging_time": {
+          "label": "Charging Time",
+          "unit": null,
+          "format": "string",
+          "example": "50% in 30 minutes"
+        }
+      }
+    },
+    "connectivity": {
+      "category_name": "Connectivity",
+      "icon": "📡",
+      "fields": {
+        "network": {
+          "label": "Network",
+          "unit": null,
+          "format": "array",
+          "example": ["5G", "4G LTE", "3G", "2G"]
+        },
+        "wifi": {
+          "label": "Wi-Fi",
+          "unit": null,
+          "format": "string",
+          "example": "Wi-Fi 6E (802.11ax)"
+        },
+        "bluetooth": {
+          "label": "Bluetooth",
+          "unit": null,
+          "format": "string",
+          "example": "5.3"
+        },
+        "nfc": {
+          "label": "NFC",
+          "unit": null,
+          "format": "boolean",
+          "example": true
+        },
+        "usb": {
+          "label": "USB",
+          "unit": null,
+          "format": "string",
+          "example": "USB-C 3.0"
+        },
+        "sim": {
+          "label": "SIM",
+          "unit": null,
+          "format": "string",
+          "example": "Dual SIM (nano-SIM + eSIM)"
+        }
+      }
+    },
+    "design": {
+      "category_name": "Design & Build",
+      "icon": "🎨",
+      "fields": {
+        "dimensions": {
+          "label": "Dimensions",
+          "unit": "mm",
+          "format": "string",
+          "example": "146.6 x 70.6 x 8.25"
+        },
+        "weight": {
+          "label": "Weight",
+          "unit": "g",
+          "format": "integer",
+          "example": "221"
+        },
+        "materials": {
+          "label": "Materials",
+          "unit": null,
+          "format": "string",
+          "example": "Titanium frame, Ceramic Shield front, textured matte glass back"
+        },
+        "colors": {
+          "label": "Available Colors",
+          "unit": null,
+          "format": "array",
+          "example": ["Natural Titanium", "Blue Titanium", "White Titanium", "Black Titanium"]
+        },
+        "water_resistance": {
+          "label": "Water Resistance",
+          "unit": null,
+          "format": "string",
+          "example": "IP68 (6m for 30 min)"
+        },
+        "durability": {
+          "label": "Durability Features",
+          "unit": null,
+          "format": "array",
+          "example": ["Ceramic Shield", "Surgical-grade titanium", "Enhanced drop protection"]
+        }
+      }
+    },
+    "software": {
+      "category_name": "Software",
+      "icon": "💻",
+      "fields": {
+        "operating_system": {
+          "label": "Operating System",
+          "unit": null,
+          "format": "string",
+          "example": "iOS 17"
+        },
+        "ui": {
+          "label": "User Interface",
+          "unit": null,
+          "format": "string",
+          "example": "iOS with Dynamic Island"
+        },
+        "update_policy": {
+          "label": "Update Policy",
+          "unit": "years",
+          "format": "string",
+          "example": "5+ years of iOS updates"
+        },
+        "pre_installed_apps": {
+          "label": "Pre-installed Apps",
+          "unit": null,
+          "format": "array",
+          "example": ["Safari", "Mail", "Photos", "Camera", "Messages", "FaceTime"]
+        },
+        "unique_features": {
+          "label": "Unique Software Features",
+          "unit": null,
+          "format": "array",
+          "example": ["Action Button", "Always-On Display", "Live Activities", "StandBy mode"]
+        }
+      }
+    },
+    "audio": {
+      "category_name": "Audio",
+      "icon": "🎵",
+      "fields": {
+        "speakers": {
+          "label": "Speakers",
+          "unit": null,
+          "format": "string",
+          "example": "Stereo speakers with Spatial Audio"
+        },
+        "headphone_jack": {
+          "label": "Headphone Jack",
+          "unit": null,
+          "format": "boolean",
+          "example": false
+        },
+        "audio_features": {
+          "label": "Audio Features",
+          "unit": null,
+          "format": "array",
+          "example": ["Dolby Atmos", "Spatial Audio", "Audio Zoom", "Hi-Res Audio"]
+        },
+        "microphones": {
+          "label": "Microphones",
+          "unit": null,
+          "format": "string",
+          "example": "Triple microphone array with beamforming"
+        }
+      }
+    },
+    "sensors": {
+      "category_name": "Sensors",
+      "icon": "🔍",
+      "fields": {
+        "biometric": {
+          "label": "Biometric Security",
+          "unit": null,
+          "format": "array",
+          "example": ["Face ID", "Fingerprint (under display)"]
+        },
+        "sensors_list": {
+          "label": "Sensors",
+          "unit": null,
+          "format": "array",
+          "example": ["Accelerometer", "Gyroscope", "Proximity", "Ambient light", "Barometer", "Magnetometer"]
+        },
+        "special_sensors": {
+          "label": "Special Sensors",
+          "unit": null,
+          "format": "array",
+          "example": ["LiDAR Scanner", "Ultra Wideband chip"]
+        }
+      }
+    },
+    "pricing": {
+      "category_name": "Pricing & Availability",
+      "icon": "💰",
+      "fields": {
+        "launch_price": {
+          "label": "Launch Price",
+          "unit": "USD",
+          "format": "price_range",
+          "example": "$999 - $1499"
+        },
+        "current_price": {
+          "label": "Current Price",
+          "unit": "USD",
+          "format": "price_range",
+          "example": "$799 - $1299"
+        },
+        "release_date": {
+          "label": "Release Date",
+          "unit": null,
+          "format": "date",
+          "example": "September 22, 2023"
+        },
+        "availability": {
+          "label": "Availability",
+          "unit": null,
+          "format": "string",
+          "example": "Available worldwide"
+        },
+        "market_status": {
+          "label": "Market Status",
+          "unit": null,
+          "format": "string",
+          "example": "Current flagship model"
+        }
+      }
+    }
+  },
+  "category_order": [
+    "display",
+    "performance", 
+    "camera",
+    "battery",
+    "connectivity",
+    "design",
+    "software",
+    "audio",
+    "sensors",
+    "pricing"
+  ],
+  "comparison_weights": {
+    "display": 0.15,
+    "performance": 0.20,
+    "camera": 0.18,
+    "battery": 0.12,
+    "connectivity": 0.08,
+    "design": 0.10,
+    "software": 0.07,
+    "audio": 0.05,
+    "sensors": 0.03,
+    "pricing": 0.02
+  }
+}
